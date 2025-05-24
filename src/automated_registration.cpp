@@ -16,6 +16,7 @@ using namespace Rcpp;
 using namespace std;
 using namespace cv;
 using namespace cv::xfeatures2d;
+using namespace cv::features2d;
 
 // check if keypoints are degenerate
 std::string check_degenerate(std::vector<cv::KeyPoint> keypoints1, std::vector<cv::KeyPoint> keypoints2) {
