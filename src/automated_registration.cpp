@@ -236,7 +236,7 @@ void alignImagesFLANN(Mat &im1, Mat &im2, Mat &im1Reg, Mat &im1Overlay, Mat &imM
 
   // Detect SIFT features
   //Ptr<Feature2D> sift = cv::SIFT::create();
-  Ptrr<Feature2D> sift = cv2.SIFT_create()
+  Ptr<Feature2D> sift = cv2.SIFT_create()
   sift->detectAndCompute(im1Proc, Mat(), keypoints1, descriptors1);
   sift->detectAndCompute(im2Proc, Mat(), keypoints2, descriptors2);
   Rcout << "DONE: sift based key-points detection and descriptors computation" << endl;
